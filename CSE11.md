@@ -41,15 +41,15 @@ Use Java applications (with a `main()` method).
 
 ## Primitive Data Types
 
-| Data Type | Ex.    | Size    | Range                        |
-| --------- | ------ | ------- | ---------------------------- |
-| `double`  | `0.0`  | 8 bytes | around 10^308^ (decimals)    |
-| `float`   | `0.0f` | 4 bytes | around 10^38^  (decimals)    |
-| `long`    | `0L`   | 8 bytes | around 10^18^ (whole number) |
-| `int`     | `0`    | 4 bytes | around 10^9^ (whole number)  |
-| `short`   | `0`    | 2 bytes | around 10^4^ (whole number)  |
-| `byte`    | `0`    | 1 byte  | around 100 (whole number)    |
-| `char`    | `'A'`  | 2 bytes | (whole number)               |
+| Data Type | Ex.    | Size    | Range                                 |
+| --------- | ------ | ------- | ------------------------------------- |
+| `double`  | `0.0`  | 8 bytes | around 10<sup>308</sup> (decimals)    |
+| `float`   | `0.0f` | 4 bytes | around 10<sup>38</sup>  (decimals)    |
+| `long`    | `0L`   | 8 bytes | around 10<sup>18</sup> (whole number) |
+| `int`     | `0`    | 4 bytes | around 10<sup>9</sup> (whole number)  |
+| `short`   | `0`    | 2 bytes | around 10<sup>4</sup> (whole number)  |
+| `byte`    | `0`    | 1 byte  | around 100 (whole number)             |
+| `char`    | `'A'`  | 2 bytes | (whole number)                        |
 
 ### Type Changing
 
