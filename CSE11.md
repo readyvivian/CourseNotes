@@ -2,40 +2,42 @@
 
 ## Introduction
 
-*Ex.* `Foo.java`:
-
-```java
-public class Foo {
-  public static void main( String[] args ) {
-    System.out.println(“Hello world”);
-} }
-```
-
-`Foo` is class name (capitalized first letter).
+> `Foo.java`:
+>
+> ```java
+> public class Foo {
+>   public static void main( String[] args ) {
+>     System.out.println(“Hello world”);
+> 	}
+> }
+> ```
+>
+> `Foo` is class name (capitalized first letter).
 
 ### Compile
 
 Translate human-readable Java language program into an equivalent program in a language closer to what the computer can understand.
 
-```shell
-$ javac Foo.java
-```
-
-Generate `Foo.class` file (binary).
+> ```shell
+> $ javac Foo.java
+> ```
+>
+> Generate `Foo.class` file (binary).
+>
 
 ### Run
 
 Use Java applications (with a `main()` method).
 
-```shell
-$ java Foo
-```
-
-Can use shortcut to combine compile and run, but not recommended:
-
-```shell
-$ java Foo.java
-```
+> ```shell
+> $ java Foo
+> ```
+>
+> Can use shortcut to combine compile and run, but not recommended:
+>
+> ```shell
+> $ java Foo.java
+> ```
 
 ## Primitive Data Types
 
@@ -49,14 +51,45 @@ $ java Foo.java
 | `byte`    | `0`    | 1 byte  | around 100 (whole number)    |
 | `char`    | `'A'`  | 2 bytes | (whole number)               |
 
-Type changing:
+### Type Changing
 
-- Automatic conversion (promotion): from smaller type to larger type.
+#### Automatic Conversion (Promotion)
 
-  - *Ex.*
+From smaller type to larger type.
 
-    ```java
-    double x = 7;
-    ```
+> ```java
+> double x = 7;
+> ```
+>
+> `x` will be `7.0.`
 
-- Type cast: from larger type to smaller type.
+#### Type Cast
+
+From larger type to smaller type.
+
+> ```java
+> int y = (int)2.5;
+> ```
+>
+> `y` will be `2`.
+
+#### Mixed Arithmetic
+
+> ```java
+> int x = 3;
+> double y = x/2;
+> double z = x/2.0;
+> ```
+>
+> `y` will be `1.0`:
+>
+> ​	`x/2` is `int` divided by `int`, so it will generate `2` (`int`), then converted to `2.0` (`double`).
+>
+> `z` will be `1.5`:
+>
+> ​	`x/2.0` is `int` divided by `int`, so `x` will be converted to `3.0` (`double`) first. Then `3.0/2.0` is `double` divided by `double`, generating `1.5`.
+>
+> `x` will still be `3` (`int`).
+
+## Variables
+
